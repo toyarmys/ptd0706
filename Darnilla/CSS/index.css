@@ -648,3 +648,935 @@ div.project-img1:hover div.img-01::before,div.project-img1:hover div.img-02::bef
 	}
 }
 
+@media (min-width: 480px) and (max-width: 768px){
+	
+	#container-fluid .my-project{
+		display: none;
+	}
+
+	#demo{
+		display: block;
+		width: 100%;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		position: fixed;
+		top: -10px;
+		z-index: 99;
+	}
+	
+	header > .logo{
+		width: 90%;
+		margin-top: 1.2em;
+	}
+
+	header > div{
+		margin: 1.5em 1em 1em;
+	}
+
+	header > div > span{
+		display: flex;
+		background-color: #000;
+		width: 2em;
+		height: 1.5em;
+		justify-content: center;
+		color: #fff;
+	}
+
+	header > .sidenav #close{
+		display: flex;
+		justify-content: flex-end;
+		margin: 0 .5em;
+		font-size: 2em;
+		color: #fff;
+	}
+
+	header > .sidenav {
+  		height: 100%;
+  		width: 0;
+  		position: fixed;
+  		z-index: 1901;
+  		top: -1.5em;
+  		right: -160px;
+  		background-color: tomato;
+  		overflow-x: hidden;
+  		transition: 1s;
+  		display: flex;
+  		flex-direction: column;
+
+	}
+
+	header > .sidenav ul{
+		flex-direction: column;
+		text-align: right;
+	}
+
+	header > .sidenav ul li a {
+  		padding: 15px 8px 8px 32px;
+  		text-decoration: none;
+  		font-size: 15px;
+  		color: #fff;
+  		transition: 0.3s;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 6em;
+		text-align: center;
+		display: block;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 100%;
+		padding: 2em 1em 1em 3.5em;
+	}
+
+	#container-fluid .portfolio .left-portfolio ul {
+    width: 80%;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 100%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -6.5em;
+		margin-top: 1em;
+	}
+
+	#container-fluid .work-time .project i,#container-fluid .work-time .working-hours i,#container-fluid .work-time .feedbacks i,#container-fluid .work-time .clients i{
+		font-size: 4em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: 1em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1);
+		transition: 1s;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1023px){
+	
+	#container-fluid .my-project{
+		display: none;
+	}
+
+	#demo{
+		display: block;
+		width: 100%;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		position: fixed;
+		top: -10px;
+		z-index: 99;
+	}
+	
+	header > .logo{
+		width: 90%;
+		margin-top: 1.2em;
+	}
+
+	header > div{
+		margin: 1.5em 1em 1em;
+	}
+
+	header > div > span{
+		display: flex;
+		background-color: #000;
+		width: 2em;
+		height: 1.5em;
+		justify-content: center;
+		color: #fff;
+	}
+
+	header > .sidenav #close{
+		display: flex;
+		justify-content: flex-end;
+		margin: 0 .5em;
+		font-size: 2em;
+		color: #fff;
+	}
+
+	header > .sidenav {
+  		height: 100%;
+  		width: 0;
+  		position: fixed;
+  		z-index: 1901;
+  		top: -1.5em;
+  		right: -160px;
+  		background-color: tomato;
+  		overflow-x: hidden;
+  		transition: 1s;
+  		display: flex;
+  		flex-direction: column;
+
+	}
+
+	header > .sidenav ul{
+		flex-direction: column;
+		text-align: right;
+	}
+
+	header > .sidenav ul li a {
+  		padding: 15px 8px 8px 32px;
+  		text-decoration: none;
+  		font-size: 15px;
+  		color: #fff;
+  		transition: 0.3s;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 6em;
+		text-align: center;
+		display: block;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 100%;
+		padding: 2em 1em 1em 3.5em;
+	}
+
+	#container-fluid .portfolio .left-portfolio ul {
+    width: 80%;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 100%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -6.5em;
+		margin-top: 1em;
+	}
+
+	#container-fluid .work-time .project i,#container-fluid .work-time .working-hours i,#container-fluid .work-time .feedbacks i,#container-fluid .work-time .clients i{
+		font-size: 4em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: 1em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1);
+		transition: 1s;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+
+	#demo{
+		display: none;
+	}
+
+	#container-fluid #my-project{
+		width: 100%;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-01 h2,#container-fluid #my-project .project-img1 .gallery li .img-02 h2,#container-fluid #my-project .project-img1 .gallery li .img-03 h2,#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		font-size: 1.5em;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		margin-right: 3em;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		
+	}
+
+	#header{
+	background-color: #e9e9e9;
+	width: 100%;
+	max-width: 18000px;
+	display: flex;
+	justify-content: space-between;
+	}
+
+	header > .logo{
+		width: 30%;
+		margin: 1em 1em;
+	}
+
+	header > .sidenav{
+		width: 70%;
+		margin-bottom: 25em;
+		margin-right: 2em;
+	}
+
+	header > div > span{
+		display: none;
+	}
+
+	header > .sidenav ul{
+		display: flex;
+		align-content: space-between;
+		justify-content: flex-end;
+	}
+
+	header > .sidenav ul li{
+		margin-top: 1em;
+		margin-right: 0;
+	}
+
+	header > .sidenav ul li a{
+		color: #000;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	header > .sidenav ul li a{
+		width: 100%;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: -0em;
+		margin-top: -20em;
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 20em;
+	}
+
+	.header-info p.second-para{
+		width: 40%;
+		margin-left: 33em;
+	}
+
+	.header-info h1{
+		margin-left: 13.1em;
+	}
+
+	.header-info .btn{
+		margin-left: 44em;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+		margin-bottom: 8em;
+	}
+
+	#container-fluid .about-me .my-info{
+		width: 57%;
+		margin-left: 13em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 50%;
+		padding: 2em 1em 1em 7.5em;
+	}
+
+	#container-fluid .portfolio .left-portfolio ul {
+    	width: 80%;
+    	margin-bottom: 2em;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 50%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -1.2em;
+		margin-top: 1em;
+	}
+
+	#container-fluid .work-time .project i,#container-fluid .work-time .working-hours i,#container-fluid .work-time .feedbacks i,#container-fluid .work-time .clients i{
+		font-size: 4em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: 1em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1.5);
+		transition: 1s;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1440px){
+
+	#demo{
+		display: none;
+	}
+
+	#container-fluid #my-project{
+		width: 100%;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-01 h2,#container-fluid #my-project .project-img1 .gallery li .img-02 h2,#container-fluid #my-project .project-img1 .gallery li .img-03 h2,#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		font-size: 1.5em;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		margin-right: 3em;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		
+	}
+
+	#header{
+		background-color: #e9e9e9;
+		width: 100%;
+		max-width: 18000px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header > .logo{
+		width: 30%;
+		margin: 1em 1em;
+	}
+
+	header > .sidenav{
+		width: 70%;
+		margin-bottom: 25em;
+		margin-right: 5em;
+	}
+
+	header > div > span{
+		display: none;
+	}
+
+	header > .sidenav ul{
+		display: flex;
+		align-content: space-between;
+		justify-content: flex-end;
+	}
+
+	header > .sidenav ul li{
+		margin-top: 1em;
+		margin-right: 0;
+	}
+
+	header > .sidenav ul li a{
+		color: #000;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	header > .sidenav ul li a{
+		width: 100%;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: 0em;
+		margin-top: -20em;
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 20em;
+	}
+
+	.header-info p.second-para{
+		width: 40%;
+		margin-left: 50em;
+	}
+
+	.header-info h1{
+		margin-left: 20em;
+	}
+
+	.header-info .btn{
+		margin-left: 66.5em;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+		margin-bottom: 8em;
+	}
+
+	#container-fluid .about-me .my-info{
+		width: 41%;
+		margin-left: 26em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 50%;
+		padding: 2em 1em 1em 7.5em;
+	}
+
+	#container-fluid .portfolio .left-portfolio ul {
+    	width: 80%;
+    	margin-bottom: 2em;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 50%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -1.2em;
+		margin-top: 1em;
+	}
+
+	#container-fluid .work-time .project i,#container-fluid .work-time .working-hours i,#container-fluid .work-time .feedbacks i,#container-fluid .work-time .clients i{
+		font-size: 4em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: 1em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1.5);
+		transition: 1s;
+	}
+}
+
+@media (min-width: 1441px) and (max-width: 2559px){
+
+	#demo{
+		display: none;
+	}
+
+	#container-fluid #my-project{
+		width: 100%;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-01 h2,#container-fluid #my-project .project-img1 .gallery li .img-02 h2,#container-fluid #my-project .project-img1 .gallery li .img-03 h2,#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		font-size: 1.5em;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		margin-right: 3em;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		
+	}
+
+	#header{
+		background-color: #e9e9e9;
+		width: 100%;
+		max-width: 18000px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header > .logo{
+		width: 30%;
+		margin: 1em 1em;
+	}
+
+	header > .sidenav{
+		width: 70%;
+		margin-bottom: 25em;
+		margin-right: 5em;
+	}
+
+	header > div > span{
+		display: none;
+	}
+
+	header > .sidenav ul{
+		display: flex;
+		align-content: space-between;
+		justify-content: flex-end;
+	}
+
+	header > .sidenav ul li{
+		margin-top: 1em;
+		margin-right: 0;
+	}
+
+	header > .sidenav ul li a{
+		color: #000;
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	header > .sidenav ul li a{
+		width: 100%;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: 0em;
+		margin-top: -25em;
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 30em;
+	}
+
+	.header-info p.second-para{
+		width: 19%;
+		margin-left: 56em;
+	}
+
+	.header-info h1{
+		margin-left: 22.3em;
+	}
+
+	.header-info .btn{
+		margin-left: 74em;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+		margin-bottom: 8em;
+	}
+
+	#container-fluid .about-me .my-info{
+		width: 57%;
+		margin-left: 13em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 50%;
+		padding: 2em 1em 1em 7.5em;
+	}
+
+	#container-fluid .portfolio .left-portfolio ul {
+    	width: 80%;
+    	margin-bottom: 2em;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 50%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -1.2em;
+		margin-top: 1em;
+	}
+
+	#container-fluid .work-time .project i,#container-fluid .work-time .working-hours i,#container-fluid .work-time .feedbacks i,#container-fluid .work-time .clients i{
+		font-size: 4em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: 1em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1.5);
+		transition: 1s;
+	}
+}
+
+@media (min-width: 2560px){
+
+	#demo{
+		display: none;
+	}
+
+	#container-fluid #my-project{
+		width: 100%;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-01 h2,#container-fluid #my-project .project-img1 .gallery li .img-02 h2,#container-fluid #my-project .project-img1 .gallery li .img-03 h2,#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		font-size: 1.5em;
+	}
+
+	#container-fluid #my-project .project-img1 .gallery li .img-04 h2{
+		margin-right: 3em;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		min-height: 50em;
+	}
+
+	#header{
+		background-color: #e9e9e9;
+		width: 100%;
+		max-width: 18000px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header > .logo{
+		width: 30%;
+		margin: 1em 1em;
+	}
+
+	header > .sidenav{
+		width: 70%;
+		margin-bottom: 25em;
+		margin-right: 5em;
+	}
+
+	header > div > span{
+		display: none;
+	}
+
+	header > .sidenav ul{
+		display: flex;
+		align-content: space-between;
+		justify-content: flex-end;
+	}
+
+	header > .sidenav ul li{
+		margin-top: 1em;
+		margin-right: 3em;
+	}
+
+	header > .sidenav ul li a{
+		color: #000;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.8em;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: 0em;
+		margin-top: -38em;
+		text-align: left;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 20em;
+	}
+
+	.header-info p.second-para{
+		width:29%;
+		margin-left: 50em;
+		font-size: 2em;
+	}
+
+	.header-info h1{
+		margin-left: 25em;
+		font-size: 4em;
+	}
+
+	.header-info .btn{
+		margin-left: 66.5em;
+		font-size: 1.5em;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+		margin-bottom: 8em;
+	}
+
+	#container-fluid .about-me h2{
+		font-size: 4em;
+		text-transform: uppercase;
+	}
+
+	#container-fluid .about-me .my-info{
+		width: 57%;
+		margin-left: 15em;
+		font-size: 2.5em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 50%;
+		padding: 8em 1em 1em 10.5em;
+	}
+
+
+
+	#container-fluid .portfolio .left-portfolio ul {
+    	width: 80%;
+    	margin-bottom: 2em;
+	}
+
+	#container-fluid .portfolio .left-portfolio h2{
+		font-size: 4em;
+		text-transform: uppercase;
+	}
+
+	#container-fluid .portfolio .left-portfolio ul li{
+		font-size: 2em;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 50%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -1.2em;
+		margin-top: 1em;
+	}
+
+	#container-fluid .work-time .project i,#container-fluid .work-time .working-hours i,#container-fluid .work-time .feedbacks i,#container-fluid .work-time .clients i{
+		font-size: 7.5em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: 2em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1.5);
+		transition: 1s;
+	}
+
+	#container-fluid .my-project h1{
+		font-size: 5em;
+	}
+
+	#container-fluid .my-project .project-img1 ul{
+	display: flex;
+	width: 100%;
+	height: 20em;
+	justify-content: center;
+	
+	}
+}
