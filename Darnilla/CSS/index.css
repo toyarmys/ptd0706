@@ -1,0 +1,650 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url(../image/dewang-gupta-Mu3T3DmvQQw-unsplash.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+li{
+	list-style: none;
+}
+
+#header{
+	background-color: #e9e9e9;
+	width: 100%;
+	max-width: 18000px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header > .logo{
+	width: 30%;
+	margin: 1em 1em;
+}
+
+header > .sidenav{
+	width: 70%;
+	margin-bottom: 25em;
+	margin-right: 10em;
+}
+
+header > div > span{
+	display: none;
+}
+
+header > .sidenav #close{
+	display: none;
+}
+
+header > .sidenav ul{
+	display: flex;
+	align-content: space-between;
+	justify-content: flex-end;
+}
+
+header > .sidenav ul li{
+	margin: 1em 2em;
+	
+}
+
+header > .sidenav ul li a{
+	color: #000;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+header > .sidenav ul li a.current-page{
+	color: #10c9c3;
+	outline: none;
+	border: none;
+}
+
+header > .sidenav ul li a:hover{
+	color: tomato;
+	transition: 1s;
+}
+
+ .header-info{
+	width: 25%;
+	display: flex;
+	margin-top: -350px;
+	margin-bottom: 150px;
+	margin-left: 75em;
+	flex-direction: column;
+}
+
+.header-info > p.second-para{
+	width:100%;
+	margin-top: 2em;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(0,0,0,0.5);
+	font-weight: 600;
+}
+
+.header-info button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	color: #fff;
+	width: 12em;
+	height: 4em;
+	font-size: .75em;
+	text-align: center;
+	margin-top: 2em;
+	position: relative;
+	background-color: #10c9c3;
+	transition: .4s linear;
+}
+
+.header-info button:hover{
+	color: tomato;
+	transition: 1s;
+	border: none;
+	outline: none;
+}
+
+#container-fluid .about-me{
+	width: 30.5%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15em auto;
+}
+
+#container-fluid .about-me .my-info{
+	margin: 1em 0 1em 0;
+}
+
+#container-fluid .portfolio{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	min-height: 30em;
+}
+
+#container-fluid .portfolio .left-portfolio{
+	width: 50%;
+	background-color: #f8f9f9;
+	padding: 9em 0 10em 10em;
+}
+
+#container-fluid .portfolio .left-portfolio h2{
+	margin-top: 0px;
+
+}
+
+#container-fluid .portfolio .left-portfolio ul li{
+	margin-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	position: relative;
+	font-weight: bold;
+}
+
+#container-fluid .portfolio .left-portfolio ul{
+	width: 60%;
+}
+
+#container-fluid .portfolio .left-portfolio ul li:before{
+	content: '';
+	position: absolute;
+	top: calc(100% + 1em);
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: #d8d8d8;
+}
+
+#container-fluid .portfolio .left-portfolio ul li:after{
+	content: '';
+	position: absolute;
+	top: calc(100% + 1em);
+	left: 0;
+	width: 0;
+	height: 5px;
+	background-color: #10c9c3;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+}
+
+#container-fluid .portfolio .left-portfolio ul li.html:after{
+	animation-name: html;
+}
+
+#container-fluid .portfolio .left-portfolio ul li.css:after{
+	animation-name: css;
+}
+
+#container-fluid .portfolio .left-portfolio ul li.js:after{
+	animation-name: js;
+}
+
+#container-fluid .portfolio .left-portfolio ul li.jquery:after{
+	animation-name: jquery;
+}
+
+#container-fluid .portfolio .left-portfolio ul li.photoshop:after{
+	animation-name: photoshop;
+}
+
+#container-fluid .portfolio .left-portfolio ul li.php:after{
+	animation-name: php;
+}
+
+@keyframes html{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+
+@keyframes css{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes js{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 60%;
+	}
+}
+
+@keyframes jquery{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 60%;
+	}
+}
+
+@keyframes photoshop{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+@keyframes php{
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+
+
+#container-fluid .portfolio .right-portfolio{
+	width: 50%;
+	background-color: #e9e9e9;
+	display: flex;
+	justify-content: center;
+}
+
+#container-fluid .portfolio .right-portfolio .profile-img{
+	width: 100%;
+	height: 100%;
+}
+
+#container-fluid .work-time{
+	background-color: #10c9c3;
+	width: 100%;
+	display: flex;
+	min-height: 20em;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#container-fluid .work-time i{
+	color: #fff;
+	font-size: 3em;
+}
+
+#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+	display: flex;
+	transition: .4s linear;
+	width: 15%;
+	margin-left: 50px;
+}
+
+#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+	margin-left: 20px;
+	width: 100%;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+	transition: 1s;
+	transform: scale(1.5);
+}
+#container-fluid .work-time .project:hover i{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .project:hover p{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .working-hours:hover i{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .working-hours:hover p{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .feedbacks:hover i{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .feedbacks:hover p{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .clients:hover i{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .work-time .clients:hover p{
+	color: tomato;
+	transition: 1s;
+}
+
+#container-fluid .my-project{
+	width: 100%;
+	display: flex;
+	min-height: 20em;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 10em;
+	margin-bottom: 5em;
+}
+
+#container-fluid .my-project h1{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+#container-fluid .my-project .project-img1{
+	margin: 2em 0 2em 0;
+	width: 100%;
+}
+
+#container-fluid .my-project .project-img2{
+	width: 100%;
+	display: flex;
+	margin-top: 64px;
+}
+
+#container-fluid .my-project .project-img3{
+	width: 100%;
+	display: flex;
+	margin-top: 64px;
+}
+
+#container-fluid .my-project .project-img1 ul{
+	display: flex;
+	width: 100%;
+	height: 10em;
+	justify-content: center;
+	
+}
+
+.gallery li img{
+	height: 100%;
+	width: 100%;
+}
+
+.gallery li { 
+  display: none;
+  list-style: none;
+  width: 15em;
+  height: 15em;
+  margin: 0 1em 0 1em;
+}
+
+#container-fluid .my-project .show-more-btn, .my-project .show-less-btn{
+	display: flex;
+	justify-content: center;
+}
+
+#container-fluid .my-project .show-more-btn .more:hover, .my-project .show-less-btn .less:hover{
+	color: tomato;
+}
+
+#container-fluid .my-project .show-less-btn{
+	margin-top: 5em;
+}
+
+.more, .less {
+  background-color: #10c9c3;
+  transition: .4s linear;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 12em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+div.project-img1 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  text-align: left;
+}
+div.project-img1 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.project-img1 img {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+div.project-img1 div,div.project-img2 div,div.project-img3 div {
+  width: 100%;
+  height: 100%;
+  margin-top: -13em;
+  margin-left: .5em;
+  font-size: 1em;
+}
+div.project-img1 div::before,div.project-img2 div::before,div.project-img3 div::before {
+  content: '';
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+div.project-img1 h2,div.project-img2 h2,div.project-img3 h2,
+div.project-img1 p,div.project-img2 p,div.project-img3 p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+div.project-img1 h2,div.project-img2 h2,div.project-img3 h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(30%, 0%, 0);
+  transform: translate3d(30%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+div.project-img1 h2 span,div.project-img2 h2 span,div.project-img3 h2 span {
+  font-weight: 800;
+}
+div.project-img1 p,div.project-img2 p,div.project-img3 p {
+  font-weight: 200;
+  -webkit-transform: translate3d(0%, 30%, 0);
+  transform: translate3d(0%, 30%, 0);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+div.project-img1 a,div.project-img2 a,div.project-img3 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  color: #ffffff;
+}
+div.project-img1:hover img.img-01,div.project-img1:hover img.img-02,div.project-img1:hover img.img-03,div.project-img1:hover img.img-04{
+  opacity: 0.3;
+}
+div.project-img1:hover div.img-01 h2,div.project-img1:hover div.img-02 h2,div.project-img1:hover div.img-03 h2,div.project-img1:hover div.img-04 h2{
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+div.project-img1:hover div.img-01 p,div.project-img1:hover div.img-02 p,div.project-img1:hover div.img-03 p,div.project-img1:hover div.img-04 p{
+  opacity: 0.9;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+div.project-img1:hover div.img-01::before,div.project-img1:hover div.img-02::before,div.project-img1:hover div.img-03::before,div.project-img1:hover div.img-04::before {
+  background: rgba(255, 255, 255, 0);
+  left: 30px;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+@media (max-width: 480px){
+	
+	#container-fluid .my-project{
+		display: none;
+	}
+
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+		position: fixed;
+		top: -10px;
+		z-index: 9999;
+	}
+	
+	header > .logo{
+		width: 90%;
+	}
+
+	header > div > span{
+		display: flex;
+		margin: 1em 1em;
+		background-color: #000;
+		width: 2em;
+		height: 1.5em;
+		justify-content: center;
+		color: #fff;
+	}
+
+	header > .sidenav #close{
+		display: flex;
+		justify-content: flex-end;
+		margin: 0 .5em;
+		font-size: 2em;
+		color: #fff;
+	}
+
+	header > .sidenav {
+  		height: 100%;
+  		width: 0;
+  		position: fixed;
+  		z-index: 1901;
+  		top: 0;
+  		right: -160px;
+  		background-color: tomato;
+  		overflow-x: hidden;
+  		transition: 1s;
+  		display: flex;
+  		flex-direction: column;
+
+	}
+
+	header > .sidenav ul{
+		flex-direction: column;
+		text-align: right;
+	}
+
+	header > .sidenav ul li a {
+  		padding: 15px 8px 8px 32px;
+  		text-decoration: none;
+  		font-size: 15px;
+  		color: #fff;
+  		transition: 0.3s;
+	}
+
+	header > .sidenav ul li a:hover{
+		color: #000;
+		transition: 1s;
+	}
+
+	.header-info{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 6em;
+		text-align: center;
+		display: block;
+	}
+	
+	#container-fluid .about-me{
+		width: 100%;
+		margin-top: -5em;
+	}
+
+	#container-fluid .portfolio{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#container-fluid .portfolio .left-portfolio{
+		width: 100%;
+		padding: 2em 1em 1em 3.5em;
+	}
+
+	#container-fluid .portfolio .right-portfolio{
+		width: 100%;
+	}	
+
+	#container-fluid .work-time{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#container-fluid .work-time .project, .working-hours, .feedbacks, .clients{
+		margin-left: -6.5em;
+	}
+
+	#container-fluid .work-time .project p,.working-hours p,.feedbacks p,.clients p{
+		font-size: .7em;
+	}
+
+	#container-fluid .work-time .project:hover,.working-hours:hover,.feedbacks:hover,.clients:hover{
+		transform: scale(1);
+		transition: 1s;
+	}
+}
+
