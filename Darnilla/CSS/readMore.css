@@ -1,0 +1,48 @@
+body{
+	background-image: none;
+	background-color: #f5f5f5;
+}
+
+#home{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#home h2{
+	font-size: 3em;
+	text-transform: uppercase;
+	margin-top: 1em;
+}
+
+#home p{
+	width: 35%;
+	text-align: center;
+}
+
+#home .reaction-btn button{
+	background: none;
+	border: none;
+}
+
+#home .reaction-btn i{
+	color: #000;
+	font-size: 3em;
+}
+
+#home .reaction-btn i:hover{
+	color: tomato;
+}
+
+#home button a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 2em;
+	transition: .4s ease;
+}
+
+#home button a:hover{
+	color: tomato;
+	transition: 1s;
+}

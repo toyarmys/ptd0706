@@ -46,31 +46,6 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-
 $(document).ready(function () {
 
     $(window).scroll(function () {
@@ -84,7 +59,7 @@ $(document).ready(function () {
     $('.scroll-top').click(function () {
         $("html, body").animate({
             scrollTop: 0
-        }, 500);
+        }, 1000);
         return false;
     });
 
@@ -133,28 +108,42 @@ for (var i = 0; i < b.length; i++) {
   }
 }); 
 
-let saveFile = () => 
-{
-  const name = document.getElementById('Name');
-  const email = document.getElementById('Mail');
-  const title = document.getElementById('Title');
-  const comment = document.getElementById('Comment');
-  let data = 
-      '\r Name: ' + name.value + ' \r\n ' + 
-      'Email: ' + email.value + ' \r\n ' + 
-      'Country: ' + title.value + ' \r\n ' + 
-      'Message: ' + comment.value;
-  const textToBLOB = new Blob([data], { type: 'text/plain' });
-  const sFileName = 'formData.txt';    // The file to save the data.
-  let newLink = document.createElement("a");
-  newLink.download = sFileName;
-  if (window.webkitURL != null) {
-      newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+function saveFile(){
+  var name = document.getElementById("Name").value;
+  var email = document.getElementById("Mail").value;
+  var title = document.getElementById("Title").value;
+  var comment = document.getElementById("Comment").value;
+  if(name == ""){
+    alert("Bạn chưa nhập tên");
+    return false;
   }
-  else {
-      newLink.href = window.URL.createObjectURL(textToBLOB);
-      newLink.style.display = "none";
-      document.body.appendChild(newLink);
+  else if(email == ""){
+    alert("bạn chưa nhập email");
+    return false;
   }
-  newLink.click(); 
+  else{
+    let data = 
+            '\r Name: ' + name + ' \r\n ' +  
+            'Email: ' + email + ' \r\n ' + 
+            'Title: ' + title + ' \r\n ' + 
+            'Comment: ' + comment;
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';    // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+      }
 }

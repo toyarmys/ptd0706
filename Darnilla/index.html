@@ -34,7 +34,7 @@
 				<li class="list-item"><a href="#about-me" class="btn">About</a></li>
 				<li class="list-item"><a href="#my-project" class="btn">My Project</a></li>
 				<li class="list-item"><a href="#clients" class="btn">My Clients</a></li>
-				<li class="list-item"><a href="#" class="btn">Contact</a></li>
+				<li class="list-item"><a href="#contact" class="btn">Contact</a></li>
 			</ul>
 		</div>
 		<div>
@@ -105,8 +105,8 @@
 						<div class="img-01">
 							<h2>Project 01</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -114,8 +114,8 @@
 						<div class="img-01">
 							<h2>Project 02</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -123,8 +123,8 @@
 						<div class="img-01">
 							<h2>Project 03</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -132,8 +132,8 @@
 						<div class="img-01">
 							<h2>Project 04</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 				</ul>
@@ -145,8 +145,8 @@
 						<div class="img-01">
 							<h2>Project 05</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -154,8 +154,8 @@
 						<div class="img-02">
 							<h2>Project 06</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -163,8 +163,8 @@
 						<div class="img-03">
 							<h2>Project 07</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -172,8 +172,8 @@
 						<div class="img-04">
 							<h2>Project 08</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 				</ul>
@@ -185,8 +185,8 @@
 						<div class="img-01">
 							<h2>Project 09</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -194,8 +194,8 @@
 						<div class="img-02">
 							<h2>Project 10</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -203,8 +203,8 @@
 						<div class="img-03">
 							<h2>Project 11</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 					<li>
@@ -212,8 +212,8 @@
 						<div class="img-04">
 							<h2>Project 12</h2>
 							<p>That intelligent life exists elsewhere in the universe is that none of it has tried to contact us.</p>
-							<button>Read more</button>
-							<a href=""></a>
+							<button>Read more<a href="readMore.html" target="_blank"></a></button>
+							
 						</div>
 					</li>
 				</ul>
@@ -438,20 +438,60 @@
 			<h2>Need a Project?</h2>
 			<p>Let us know what you're looking for in an agency. We'll take a look and see 
 				if this could be the start of something beautiful.</p>
-			<form action="readMore.html" target="_blank">
+			<form action="" id="form1" onsubmit="return saveFile()">
 				<div class="contact-info">
-					<input type="text" placeholder="Name" required="">
-					<input type="email" placeholder="Email" required="">
+					<input type="text" placeholder="Name" id="Name" name="Name">
+					<input type="email" placeholder="Email" id="Mail" name="Mail">
 				</div>
 				<div class="contact-title">
-					<input type="text" placeholder="Title">
+					<input type="text" placeholder="Title" id="Title" name="Title">
 				</div>
 				<div class="contact-comment">
-					<input type="text" placeholder="Your Comment">
+					<input type="text" placeholder="Your Comment" id="Comment" name="Comment">
 				</div>
-				<input type="submit" value="submit" id="submit-btn">
+				<input type="submit" value="submit" id="submit-btn" onclick="saveFile()">
 			</form>
+		</div>
 	</div>
+	<footer id="footer">
+		<div class="copyright">
+			<h4>Đạt Phạm</h4>
+			&copy; Đạt Phạm 2017.All right reserved.
+		</div>
+		<div class="footer-contact">
+			<p>toyarmys@gmail.com</p>
+			<p>0326648111</p>
+		</div>
+		<div class="footer-links">
+			<ul class="" id="menu">
+				<li class="list-item"><a href="#home" class="btn current-page">Home</a>
+				<li class="list-item"><a href="#about-me" class="btn">About</a></li>
+				<li class="list-item"><a href="#my-project" class="btn">My Project</a></li>
+				<li class="list-item"><a href="#clients" class="btn">My Clients</a></li>
+				<li class="list-item"><a href="#" class="btn">Contact</a></li>
+			</ul>
+		</div>
+		<div class="social-links">
+			<ul class="" id="social-links">
+				<li class="social-item"><a href="https://www.facebook.com/shin.nosuke.96" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<li class="social-item"><a href="https://www.google.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<li class="social-item"><a href="https://www.instagram.com/ptd0706/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+				<li class="social-item"><a href="https://www.youtube.com/?gl=VN" target="_blank"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+		<div id="map"></div>
+		    <script>
+		      var map;
+		      function initMap() {
+		        map = new google.maps.Map(document.getElementById('map'), {
+		          center: {lat: 21.0112736, lng: 105.7981708},
+		          zoom: 8
+		        });
+		      }
+		    </script>
+		    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbSLEjInKkjczJg4Nghx0er6xHGT43JEY&callback=initMap"
+		    async defer></script>
+	</footer>
 </body>
 </html>
 
